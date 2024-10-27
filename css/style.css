@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: linear-gradient(hwb(0 0% 100% / 0.979), #06050576);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-left: solid red 5px;
+    transition: 1s
+}
+
+.logo:hover {
+    border-left: solid rgb(215, 209, 209) 30px;
+    border-radius: 80px 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 0.001px solid rgb(49, 46, 46);
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    font-size: 20px;
+    border-bottom: 3px solid rgb(243, 216, 216);
+}
+
+content {
+    background-color: aqua;
+}
+
+.content .text {
+    color: #ffffff;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 300px;
+    border-radius: 50%;
+    margin-left: 0;
+    translate: 300px 0;
+}
+
+h1 {
+    width: fit-content;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border: 0;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 30px;
+    line-height: 25px;
+    margin: 10px 0px;
+    letter-spacing: 5px;
+    margin-left: 50px;
+    line-height: 35px;
+}
+
+p span {
+    color: aqua;
+    margin-left: 80px;
+    translate: 80px 0;
+    line-height: 40px;
+    font-size: 40px;
+    margin-right: 0;
+}
+
+h1:hover {
+    color: lightslategray;
+    border-bottom: solid #fff;
+}
+
+.content.img {
+    width: 400px;
+}
+
+@media(min-width:950px) and(max-width:1150px) {
+    body {
+        background: rgb(235, 16, 16);
+    }
+}
